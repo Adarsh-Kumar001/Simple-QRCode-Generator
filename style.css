@@ -112,3 +112,45 @@ input::placeholder{
   opacity: 0;
 }
 
+@media screen and (max-width:1311px) {
+  .containor{
+    gap: 90px;
+  }
+} 
+
+@media screen and (max-width:1027px) {
+  .containor{
+    gap: 20px;
+  }
+  
+}
+
+@media screen and (max-width:936px) {
+  #qr-image{
+    height: 250px;
+    width: 250px;
+    border: 5px solid black;
+  }
+
+  h1{
+    font-size: 20px;
+  }
+
+  input{
+    width: 250px;
+  }
+
+  .button{
+    width: 90px;
+    height: 29px;
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width:548px) {
+  .containor{
+    flex-direction: column;
+    gap: 90px;
+  }
+}
+
