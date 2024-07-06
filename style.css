@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+
+h1{
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: 40px;
+}
+
+  
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+
+    background-color:rgba(250, 235, 215, 0.792);
+
+}
+
+
+.containor{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20vw;
+    justify-content: center;
+    align-items: center;
+
+    animation: Slide 0.3s ease-in;
+
+}
+
+@keyframes Slide{
+    0%{
+      transform: translateX(-150px);
+      opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+#qr-image{
+    height: 500px;
+    width: 500px;
+    border: 15px solid black;
+    opacity: 0;
+}
+
+.buttons{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    border-radius: 10px;
+    height: 39px;
+    width: 140px;
+    color: white;
+
+    font-family: "Archivo Black", sans-serif;
+    
+}
+
+.button:hover{
+  cursor: pointer;
+  background-color: rgb(70, 70, 255);
+}
+
+.button:active {
+  transform: translateY(2px);
+}
+
+
+input{
+    width: 420px;
+    height: 30px;
+    border: 2px solid rgb(0, 0, 213);
+    border-radius: 10px;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    padding: 5px;
+    color: rgb(0, 0, 111);
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input::placeholder{
+  color: grey;
+  font-style: italic;
+  font-weight: 100;
+  font-family: "Archivo Black", sans-serif;
+  font-style: normal;
+}
+
+#downloadbtn{
+  opacity: 0;
+}
+
